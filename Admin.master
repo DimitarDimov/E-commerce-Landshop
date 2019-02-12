@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<%@ Register Src="UserControls/UserInfo.ascx" TagName="UserInfo" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  <title>LandShop Admin</title>
+</head>
+<body>
+  <form id="form1" runat="server">
+  <div class="Window">
+    <div class="Main">
+      <div class="Left">
+          <table border="0" style="width: 856px; height: 227px">
+              <tr>
+                  <td style="width: 10px">
+        <uc1:UserInfo ID="UserInfo1" runat="server" />
+                  </td>
+                  <td style="width: 785px">
+          <asp:ContentPlaceHolder ID="titlePlaceHolder" runat="server">
+          </asp:ContentPlaceHolder>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="width: 10px">
+                  </td>
+                  <td style="width: 785px">
+        <asp:ContentPlaceHolder ID="adminPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+                  </td>
+              </tr>
+          </table>
+          <br />
+          &nbsp;</div>
+      <div class="Right">
+        <div class="AdminHeader">
+            &nbsp;</div>
+      </div>
+      <div class="AdminContents">
+          &nbsp;</div>
+    </div>
+  </div>
+  </form>
+</body>
+</html>
